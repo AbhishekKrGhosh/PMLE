@@ -1,9 +1,10 @@
 
-
+import ImageCoursel from "./ImageCoursel/ImageCoursel"
 function Home(){
     return (
         <div className="w-full h-full  ">
-            <h1>Home</h1>
+            
+            <ImageCoursel></ImageCoursel>
 
         </div>
     )
