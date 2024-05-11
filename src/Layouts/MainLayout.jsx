@@ -18,7 +18,7 @@ function MainLayout() {
         <div className="flex">
           <SideBar />
           <div className="flex-1">
-            <div className="border-2 border-red-500 w-full h-full">
+            <div className="w-full h-full">
               <Outlet />
             </div>
           </div>
