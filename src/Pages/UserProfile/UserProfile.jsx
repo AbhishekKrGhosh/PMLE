@@ -2,7 +2,10 @@
 
 function UserProfile(){
     return (
-        <h1>User Profile</h1>
+        <div className="w-full h-full bg-emerald-300 ">
+            
+
+        </div>
     )
 }
 export default UserProfile

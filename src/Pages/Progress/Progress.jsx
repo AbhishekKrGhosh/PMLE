@@ -2,7 +2,10 @@
 
 function Progress (){
     return (
-        <h1>Progress</h1>
+        <div className="w-full h-full bg-blue-300 ">
+            
+
+        </div>
     )
 }
 

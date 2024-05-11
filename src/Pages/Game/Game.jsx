@@ -4,7 +4,10 @@ import React from 'react'
 
 const Game = () => {
   return (
-    <h1>Game</h1>
+    <div className="w-full h-full bg-green-300 ">
+            
+
+        </div>
   )
 }
 

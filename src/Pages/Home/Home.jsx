@@ -2,7 +2,10 @@
 
 function Home(){
     return (
-        <h1>Home Page</h1>
+        <div className="w-full h-full bg-red-300 ">
+            
+
+        </div>
     )
 }
 

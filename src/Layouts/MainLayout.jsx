@@ -11,21 +11,22 @@ import Header from './Header/Header';
 import SideBar from './Drawer/SideBar';
 import Footer from './Footer/Footer';
 
-function MainLayout (){
+function MainLayout() {
     return (
-       <>
-        <div className='relative  '>
-             <Header></Header>
-             <SideBar></SideBar>
-             <div className='absolute top-20 left-24 mx-10 my-5'>
-             <Outlet></Outlet>
-             </div>
-             <Footer></Footer>
-             
+      <div className="relative  w-full">
+        <Header />
+        <div className="flex">
+          <SideBar />
+          <div className="flex-1">
+            <div className="border-2 border-red-500 w-full h-full">
+              <Outlet />
+            </div>
+          </div>
         </div>
-     
-    </>
-        
-    )
-}
-export default MainLayout
+      </div>
+    );
+  }
+  
+  export default MainLayout;
+  
+
