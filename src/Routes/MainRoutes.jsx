@@ -5,6 +5,7 @@ import UserProfile from "../Pages/UserProfile/UserProfile";
 import Progress from "../Pages/Progress/Progress";
 import Game from "../Pages/Game/Game";
 import Settings from "../Pages/Settings/Settings";
+import Courses from "../Pages/Courses/Courses";
 
 const MainRoutes ={
     path:"/",
@@ -29,6 +30,10 @@ const MainRoutes ={
         {
             path:"/Settings",
             element:<Settings/>
+        },
+        {
+            path:"/Courses",
+            element:<Courses/>
         },
 
     ]

@@ -6,6 +6,7 @@ import AccountBoxIcon from '@mui/icons-material/AccountBox';
 import SettingsIcon from '@mui/icons-material/Settings';
 import { Link, Stack } from '@mui/material';
 import { blue, purple } from '@mui/material/colors';
+import AssessmentIcon from '@mui/icons-material/Assessment';
 import { useNavigate } from 'react-router-dom';
 function SideBar (){
     const navigate = useNavigate();
@@ -25,17 +26,22 @@ function SideBar (){
 
         navigate('/UserProfile')
      }
+     function handleCourses(){
+        navigate('/Courses')
+     }
 
 
 
     return (
-        <div className="w-14 h-screen bg-[#f6f5f5] flex flex-col justify-between border-gray-700 border-t-2">
+        <div className="w-14 h-screen bg-[#f6f5f5] flex flex-col justify-between border-gray-700 border-t-[1px]">
         {/* Side Bar Content Goes Here */}
         <Stack direction={'column'} gap={5} className='px-2 py-6'> 
         <HomeIcon className='hover:cursor-pointer hover:scale-125 duration-75' fontSize='large' sx={{color:'#003C43'}} onClick={handleHome}>
 
         </HomeIcon>
+        <AssessmentIcon className='hover:cursor-pointer hover:scale-125 duration-75'  fontSize='large' sx={{color: '#8644A2'}} onClick={handleCourses}></AssessmentIcon>
         <SportsEsportsIcon  className='hover:cursor-pointer hover:scale-125 duration-75'  fontSize='large' sx={{color: '#5AB2FF'}} onClick={handleGame}></SportsEsportsIcon>
+       
         <AnalyticsIcon  className='hover:cursor-pointer hover:scale-125 duration-75' fontSize='large' sx={{color: '#FF8A08'}} onClick={handleProgress} ></AnalyticsIcon>
         <AccountBoxIcon  className='hover:cursor-pointer hover:scale-125 duration-75' fontSize='large' sx={{color:'#C65BCF'}} onClick={handleUserProfile}></AccountBoxIcon>
        
