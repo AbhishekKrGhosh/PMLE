@@ -14,7 +14,7 @@ import SideBar from './Drawer/SideBar';
 
 function MainLayout() {
     return (
-      <div className="relative  w-full">
+      <div className="relative  w-full ">
         <Header  />
         <div className="flex fixed">
           <SideBar />

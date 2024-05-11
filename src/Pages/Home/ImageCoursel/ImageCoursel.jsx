@@ -12,15 +12,15 @@ function ImageCoursel (){
         <div className="embla__container ">
 
           <div className="embla__slide  flex justify-center items-center" >
-            <img className='w-[100%] h-[100%]'  src='https://png.pngtree.com/thumb_back/fh260/back_pic/02/50/63/71577e1cf59d802.jpg'></img>
+            <img className='w-[100%] h-[100%] object-cover'  src='https://images.velog.io/images/saurabhdev/post/0c1174a8-06f2-49d8-b3bf-d9502c78a88e/Machine-Learning-course-in-Chennai.png'></img>
           </div>
 
           <div className="embla__slide flex justify-center items-center w-full">
-          <img className='w-[100%] h-[100%]' src='https://t3.ftcdn.net/jpg/05/14/95/12/360_F_514951224_2dxMLbIw5qNRdPGD003chpbVcxWtcp7K.jpg'></img>
+          <img className='w-[100%] h-[100%] object-cover' src='https://t3.ftcdn.net/jpg/05/14/95/12/360_F_514951224_2dxMLbIw5qNRdPGD003chpbVcxWtcp7K.jpg'></img>
           </div>
 
           <div className="embla__slide flex justify-center items-center">
-          <img className='w-[100%] h-[100%]' src='https://images.pexels.com/photos/573130/pexels-photo-573130.jpeg?cs=srgb&dl=pexels-zyuliansyah-573130.jpg&fm=jpg'></img>
+          <img className='w-[100%] h-[100%] object-cover' src='https://images.pexels.com/photos/573130/pexels-photo-573130.jpeg?cs=srgb&dl=pexels-zyuliansyah-573130.jpg&fm=jpg'></img>
           </div>
 
         </div>
