@@ -2,7 +2,7 @@
 
 function Home(){
     return (
-        <div className="w-full h-full bg-red-300 ">
+        <div className="w-full h-full  ">
             <h1>Home</h1>
 
         </div>

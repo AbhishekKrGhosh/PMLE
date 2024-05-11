@@ -9,7 +9,7 @@ import IconButton from '@mui/material/IconButton';
 import Header from './Header/Header';
 
 import SideBar from './Drawer/SideBar';
-import Footer from './Footer/Footer';
+
 
 
 function MainLayout() {

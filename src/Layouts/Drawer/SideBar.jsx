@@ -29,19 +29,19 @@ function SideBar (){
 
 
     return (
-        <div className="w-14 h-screen bg-[#f6f5f5] flex flex-col justify-between">
+        <div className="w-14 h-screen bg-[#f6f5f5] flex flex-col justify-between border-gray-700 border-t-2">
         {/* Side Bar Content Goes Here */}
         <Stack direction={'column'} gap={5} className='px-2 py-6'> 
-        <HomeIcon className='hover:cursor-pointer hover:scale-110' fontSize='large' sx={{color:'#003C43'}} onClick={handleHome}>
+        <HomeIcon className='hover:cursor-pointer hover:scale-125 duration-75' fontSize='large' sx={{color:'#003C43'}} onClick={handleHome}>
 
         </HomeIcon>
-        <SportsEsportsIcon  className='hover:cursor-pointer hover:scale-110'  fontSize='large' sx={{color: '#5AB2FF'}} onClick={handleGame}></SportsEsportsIcon>
-        <AnalyticsIcon  className='hover:cursor-pointer hover:scale-110' fontSize='large' sx={{color: '#FF8A08'}} onClick={handleProgress} ></AnalyticsIcon>
-        <AccountBoxIcon  className='hover:cursor-pointer hover:scale-110' fontSize='large' sx={{color:'#C65BCF'}} onClick={handleUserProfile}></AccountBoxIcon>
+        <SportsEsportsIcon  className='hover:cursor-pointer hover:scale-125 duration-75'  fontSize='large' sx={{color: '#5AB2FF'}} onClick={handleGame}></SportsEsportsIcon>
+        <AnalyticsIcon  className='hover:cursor-pointer hover:scale-125 duration-75' fontSize='large' sx={{color: '#FF8A08'}} onClick={handleProgress} ></AnalyticsIcon>
+        <AccountBoxIcon  className='hover:cursor-pointer hover:scale-125 duration-75' fontSize='large' sx={{color:'#C65BCF'}} onClick={handleUserProfile}></AccountBoxIcon>
        
         </Stack>
         <Stack className='px-2 py-4'>
-        <SettingsIcon  className='hover:cursor-pointer hover:scale-110' fontSize='large' onClick={handleSettings}></SettingsIcon>
+        <SettingsIcon  className='hover:cursor-pointer hover:scale-125 duration-75' fontSize='large' onClick={handleSettings}></SettingsIcon>
         </Stack>
             
         </div>
