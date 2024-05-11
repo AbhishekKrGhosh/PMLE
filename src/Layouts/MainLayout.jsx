@@ -15,11 +15,11 @@ import SideBar from './Drawer/SideBar';
 function MainLayout() {
     return (
       <div className="relative  w-full">
-        <Header />
-        <div className="flex">
+        <Header  />
+        <div className="flex fixed">
           <SideBar />
           <div className="flex-1">
-            <div className="w-full h-full">
+            <div className="w-full h-full overflow-y-auto">
               <Outlet />
             </div>
           </div>

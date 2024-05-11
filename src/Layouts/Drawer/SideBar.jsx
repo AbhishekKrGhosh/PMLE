@@ -33,7 +33,7 @@ function SideBar (){
 
 
     return (
-        <div className="w-14 h-screen bg-[#f6f5f5] flex flex-col justify-between border-gray-700 border-t-[1px]">
+        <div className="w-14 h-screen bg-[#f6f5f5] flex flex-col justify-start gap-60  border-gray-700 border-t-[1px]">
         {/* Side Bar Content Goes Here */}
         <Stack direction={'column'} gap={5} className='px-2 py-6'> 
         <HomeIcon className='hover:cursor-pointer hover:scale-125 duration-75' fontSize='large' sx={{color:'#003C43'}} onClick={handleHome}>
@@ -46,7 +46,7 @@ function SideBar (){
         <AccountBoxIcon  className='hover:cursor-pointer hover:scale-125 duration-75' fontSize='large' sx={{color:'#C65BCF'}} onClick={handleUserProfile}></AccountBoxIcon>
        
         </Stack>
-        <Stack className='px-2 py-4'>
+        <Stack className='px-2 py-4 '>
         <SettingsIcon  className='hover:cursor-pointer hover:scale-125 duration-75' fontSize='large' onClick={handleSettings}></SettingsIcon>
         </Stack>
             
