@@ -9,16 +9,18 @@ import IconButton from '@mui/material/IconButton';
 import Header from './Header/Header';
 
 import SideBar from './Drawer/SideBar';
+import Footer from './Footer/Footer';
 
 function MainLayout (){
     return (
        <>
-        <div className='relative h-screen w-screen'>
+        <div className='relative  '>
              <Header></Header>
              <SideBar></SideBar>
              <div className='absolute top-20 left-24 mx-10 my-5'>
              <Outlet></Outlet>
              </div>
+             <Footer></Footer>
              
         </div>
      
