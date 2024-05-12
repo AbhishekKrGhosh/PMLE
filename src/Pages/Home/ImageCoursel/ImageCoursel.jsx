@@ -16,11 +16,11 @@ function ImageCoursel (){
       
 
        
-          <img className='embla__slide' src='https://t3.ftcdn.net/jpg/05/14/95/12/360_F_514951224_2dxMLbIw5qNRdPGD003chpbVcxWtcp7K.jpg'></img>
+          <img className='embla__slide' src='https://i.ytimg.com/vi/hU4EYjQcmv8/hqdefault.jpg'></img>
          
 
          
-          <img className='embla__slide' src='https://images.pexels.com/photos/573130/pexels-photo-573130.jpeg?cs=srgb&dl=pexels-zyuliansyah-573130.jpg&fm=jpg'></img>
+          <img className='embla__slide' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLAhEJRCy_O5gN5FhnR_6feq7dX-nE1fJBmnp58U9vyg&s'></img>
         
 
         </div>

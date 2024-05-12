@@ -2,14 +2,15 @@
 
 
 import VideoCard from "./VideoCard"
-function VideoContainer(){
-    const d=[1,2,4,4,5,6,6,6,6,4,3,4,5]
+function VideoContainer({data}){
+   
+   
     return(
         <div className="w-full h-full grid grid-cols-4 px-20  ">
-            {d.map((item,index)=>{
+            {data?.map((item,index)=>{
                 return(
-                    <div className="  ">
-               <VideoCard></VideoCard>
+                    <div key={item._id}>
+               <VideoCard videoTitle={item.videoTitle} ></VideoCard>
                </div>
                 )
             })}

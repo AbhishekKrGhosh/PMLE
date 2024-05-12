@@ -1,8 +1,14 @@
 
-
-import React from 'react'
+import axios from 'axios';
+import React, { useEffect ,useState } from 'react'
 import VideoContainer from './VideoCard/VideoContainer'
-const RecommandationVideo = () => {
+
+const RecommandationVideo = ({data }) => {
+  
+
+   
+  
+
   return (
     <div className='w-full h-full  '>
         <div className='w-full h-[5%] flex items-center px-10  '>
@@ -10,7 +16,7 @@ const RecommandationVideo = () => {
         </div>
 
         <div className='w-full h-[600px] overflow-y-auto'>
-              <VideoContainer></VideoContainer>
+              <VideoContainer data={data}></VideoContainer>
         </div>
         
         </div>
