@@ -2,6 +2,8 @@ import { Toolbar } from "@mui/material"
 import SearchRoundedIcon from '@mui/icons-material/SearchRounded';
 import Avatar from '@mui/material/Avatar';
 import { useState } from "react";
+import React from "react";
+import { useAuth0 } from "@auth0/auth0-react";
 
 function Header (){
 
@@ -16,6 +18,15 @@ function Header (){
 
     }
 
+    const { loginWithRedirect , user,isAuthenticated} = useAuth0();
+
+  const { logout } = useAuth0();
+
+  
+    
+  
+
+
 
     return (
         <div>
@@ -26,6 +37,7 @@ function Header (){
             </div>
         
               <div className="flex item-center gap-48  ">
+
               <div>
                 <form className=" flex justify-end  items-center">
                     <input value={search} onChange={(e)=>{setSearch(e.target.value)}} type="text" placeholder="Search for Videos" className="px-1 py-2 w-[520px] rounded-md"></input>
@@ -35,10 +47,32 @@ function Header (){
                 </form>
               </div>
              
-               <div className="">
-                <Avatar  src="https://media.licdn.com/dms/image/D4D03AQFnGdpDxwldZw/profile-displayphoto-shrink_800_800/0/1674395244497?e=1720656000&v=beta&t=PA6mWUA1C3JAv2TE8_MpVqMzzU8AArpwu6EqRxQ2FKE"></Avatar></div>
+
+
+            {isAuthenticated?( <div className="">
+                <Avatar  src={user.picture}></Avatar>
+              
+                
+                
+                </div> ):(<div className="">
+    <Avatar  src=""></Avatar>
+    
+    
+    
+    </div>)} 
+               
+            
+
+     
+
+         {isAuthenticated?(
+         <div className="bg-purple-300 rounded-md shadow-lg shadow-purple-200"><button className="px-4 py-2" onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}>
+      Log Out
+    </button></div>): (<div className="bg-purple-300 rounded-md shadow-lg "><button className="px-4 py-2" onClick={() => loginWithRedirect()}>Log In</button></div>)}
+
+            
              </div>
-             </div>
+        </div>
         </div>
     )
 }
