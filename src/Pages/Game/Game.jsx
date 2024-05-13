@@ -66,7 +66,7 @@ const Game = () => {
                     <div key={index} className='w-[320px] h-[500px] bg-[#f5f3f3] mb-[50px] rounded-lg shadow-lg shadow-gray-400  '>
                        
                     <div className='w-full h-[50%] '>
-                     <img  className='w-full h-full rounded-t-lg hover:scale-110 delay-150' src={item.GameImage}></img>
+                     <img  className='w-full h-full rounded-t-lg hover:scale-110 delay-300 hover:rounded-xl' src={item.GameImage}></img>
                     </div>
 
                     <div className='w-full h-[50%] flex flex-col items-stretch flex-wrap gap-2 mt-2 px-2'>

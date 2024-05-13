@@ -34,7 +34,7 @@ function MainLayout() {
         <div className="flex fixed">
           <SideBar />
           <div className="flex-1">
-            <div className="w-full h-full overflow-y-auto">
+            <div className="w-full h-full overflow-y-auto bg-gray-200">
               <Outlet />
             </div>
           </div>
