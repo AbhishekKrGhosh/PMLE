@@ -43,7 +43,7 @@ function SideBar (){
 
 
     return (
-        <div className="w-14 h-screen bg-gradient-to-b from-zinc-100 via-gray-200 to-zinc-400 flex flex-col justify-start gap-60  border-gray-700 border-t-[1px]">
+        <div className="w-14 h-screen bg-gradient-to-b from-zinc-100 via-gray-200 to-zinc-400 flex flex-col justify-start gap-60 ">
         {/* Side Bar Content Goes Here */}
         <Stack direction={'column'} gap={5} className='px-2 py-6'> 
         <HomeIcon className='hover:cursor-pointer hover:scale-125 duration-75 hover:rounded-md   hover:shadow-lg hover:shadow-slate-500 ' fontSize='large' sx={{color:'#003C43'}} onClick={handleHome}>

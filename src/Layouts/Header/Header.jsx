@@ -4,12 +4,15 @@ import Avatar from '@mui/material/Avatar';
 import { useState } from "react";
 import React from "react";
 import { useAuth0 } from "@auth0/auth0-react";
+import { Navigate, useNavigate } from "react-router-dom";
+import { useContext } from "react";
+import { UserContext } from "../../Context/Context";
 
 function Header (){
 
     const [search ,setSearch]=useState("")
 
-   
+    const navigate =useNavigate()
     function handleClick(e){
       
         console.log(search)
@@ -20,7 +23,18 @@ function Header (){
 
     const { loginWithRedirect , user,isAuthenticated} = useAuth0();
 
+    const userState =useContext(UserContext)
+      
+    userState.setUser(user)
+    console.log(userState)
+
+     
+
   const { logout } = useAuth0();
+
+  function HandleProfile(){
+    navigate('/UserProfile')
+  }
 
   
     
@@ -50,7 +64,7 @@ function Header (){
 
 
             {isAuthenticated?( <div className="">
-                <Avatar  src={user.picture}></Avatar>
+                <Avatar  onClick={HandleProfile} className="hover:cursor-pointer" src={user.picture}></Avatar>
               
                 
                 

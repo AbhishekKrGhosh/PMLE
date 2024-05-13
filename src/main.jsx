@@ -10,10 +10,12 @@ import {
   QueryClientProvider,
 } from 'react-query'
 import { Auth0Provider } from '@auth0/auth0-react';
-
+import { UserProvider } from './Context/Context.jsx'
 const queryClient = new QueryClient()
 
 ReactDOM.createRoot(document.getElementById('root')).render(
+   
+  <UserProvider>
   <Auth0Provider
     domain="dev-mza47f5nwdgc35em.us.auth0.com"
     clientId="Alh4P6wMjmVg5o68RRkgoAdLJIY5FNSU"
@@ -27,4 +29,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     </QueryClientProvider>
   </React.StrictMode>,
   </Auth0Provider>
+  </UserProvider>
+
 )
