@@ -16,7 +16,7 @@ function UserProfile(){
 
     return (
         <div className=" h-full overflow-y-visible ">
-            <div className="w-[1477px] min-h-full px-3 py-10 flex-col overflow-y-visible ">
+            <div className="w-[1477px] min-h-full px-3 py-8 flex-col overflow-y-visible ">
              <div className="flex  justify-evenly  ">
               <UserNamePlate></UserNamePlate>
                 <MyCalendar></MyCalendar>
