@@ -10,7 +10,7 @@ function MyCalendar() {
 
   return (
     <div className=''>
-      <Calendar className="bg-slate-200 h-[50%] rounded-lg border-none shadow-xl shadow-slate-400"/>
+      <Calendar className="bg-slate-200 h-[100%] rounded-lg border-none shadow-xl shadow-slate-400"/>
     </div>
   );
 }
