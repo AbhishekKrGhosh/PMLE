@@ -7,6 +7,9 @@ import { useAuth0 } from "@auth0/auth0-react";
 import { Navigate, useNavigate } from "react-router-dom";
 import { useContext } from "react";
 import { UserContext } from "../../Context/Context";
+import Tooltip from '@mui/material/Tooltip';
+
+
 
 function Header (){
 
@@ -64,16 +67,20 @@ function Header (){
 
 
             {isAuthenticated?( <div className="">
+              <Tooltip title="User Profile" arrow>
                 <Avatar  onClick={HandleProfile} className="hover:cursor-pointer" src={user.picture}></Avatar>
               
                 
                 
-                </div> ):(<div className="">
+                </Tooltip> </div>  ):(
+                
+                <div className="">
+                  <Tooltip title="Please Log In" arrow>
     <Avatar  src=""></Avatar>
     
     
     
-    </div>)} 
+    </Tooltip> </div> )} 
                
             
 
