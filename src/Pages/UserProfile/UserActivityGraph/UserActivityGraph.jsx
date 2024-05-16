@@ -1,20 +1,18 @@
-
-
-import { LineChart, Line, CartesianGrid, XAxis, YAxis, AreaChart ,Area} from 'recharts';
+import { LineChart, Line, CartesianGrid, XAxis, YAxis, AreaChart, Area} from 'recharts';
 import LabelY from './LabelY';
 import LabelX from './LabelX';
 function UserActivityGraph (){
        
     const data = [
         {
-          "name": "Page A",
+          "name": "Courses",
           "uv": 4.7,
           "pv": 2400,
           "amt": 2400,
           "time":1
         },
         {
-          "name": "Page B",
+          "name": "Game",
           "uv": 3,
           "pv": 1398,
           "amt": 2210,
