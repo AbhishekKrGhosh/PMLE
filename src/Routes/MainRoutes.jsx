@@ -6,6 +6,8 @@ import Progress from "../Pages/Progress/Progress";
 import Game from "../Pages/Game/Game";
 import Settings from "../Pages/Settings/Settings";
 import Courses from "../Pages/Courses/Courses";
+import IndividualCourses from "../Pages/Courses/IndividualCourses";
+import DetailedCourse from "../Pages/Courses/DetailedCourse";
 
 const MainRoutes ={
     path:"/",
@@ -35,6 +37,14 @@ const MainRoutes ={
             path:"/Courses",
             element:<Courses/>
         },
+        {
+            path:'/individualCourses',
+            element:<IndividualCourses/>
+        },
+        {
+            path:'/detailedCourse',
+            element:<DetailedCourse/>
+        }
 
     ]
 }
