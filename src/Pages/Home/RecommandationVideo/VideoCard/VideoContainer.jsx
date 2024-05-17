@@ -10,7 +10,7 @@ function VideoContainer({data}){
             {data?.map((item,index)=>{
                 return(
                     <div key={item._id}>
-               <VideoCard videoTitle={item.videoTitle} ></VideoCard>
+               <VideoCard videoUrl={item.videoUrl} videoTitle={item.videoTitle} contentId={item._id}></VideoCard>
                </div>
                 )
             })}
