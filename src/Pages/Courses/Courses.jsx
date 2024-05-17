@@ -27,11 +27,11 @@ const Courses = () => {
   return (
     <Box p={3} width="100vw">
       <Typography variant="h3" mb={3}>Courses</Typography>
-      <Grid container spacing={2}>
+      <Grid container spacing={2} style={{padding: '0 50px 0 0'}}>
         {courseTypes
           .filter(course => course.courseFor === 'Computer Science')
           .map(course => (
-            <Grid item xs={12} sm={6} md={4} key={course._id}>
+            <Grid item xs={12} sm={6} md={4} key={course._id} >
               <Box
                 bgcolor="primary.main"
                 onClick={() => handleIndividualCourse(course.courseType)}
