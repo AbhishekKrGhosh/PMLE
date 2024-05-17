@@ -11,7 +11,7 @@ function Home(){
 
 
     const {data}=useQuery(['video'],async () =>{
-       const response= await axios.get('https://aspirationanalysisserver.onrender.com/posts/video')
+       const response= await axios.get('https://aspirationanalysisserver.onrender.com/posts/course')
        return response.data
     })
 
