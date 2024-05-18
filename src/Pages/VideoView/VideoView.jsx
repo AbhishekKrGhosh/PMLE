@@ -40,22 +40,41 @@ const VideoView = () => {
     return () => clearInterval(interval)
   }, [])
 
+  
   useEffect(() => {
     if (expressions.length > 0) {
-      const expressionCounts = expressions.reduce((acc, expression) => {
-        acc[expression] = (acc[expression] || 0) + 1
-        return acc
-      }, {})
-
-      const maxCount = Math.max(...Object.values(expressionCounts))
-      const mostFrequentExpressions = Object.keys(expressionCounts).filter(
-        (key) => expressionCounts[key] === maxCount
-      )
-
-      setExpressionList(prev => [...prev, ...mostFrequentExpressions])
-      console.log('Most Frequent Expressions:', expressionList)
+      const expressionCounts = {
+        angry: 0,
+        disgust: 0,
+        fear: 0,
+        happy: 0,
+        neutral: 0,
+        sad: 0,
+        surprise: 0
+      };
+  
+      expressions.forEach(expression => {
+        if (expressionCounts.hasOwnProperty(expression)) {
+          expressionCounts[expression] += 1;
+        }
+      });
+  
+      let maxCount = 0;
+      let mostFrequentExpressions = [];
+  
+      Object.entries(expressionCounts).forEach(([expression, count]) => {
+        if (count > maxCount) {
+          maxCount = count;
+          mostFrequentExpressions = [expression];
+        } else if (count === maxCount) {
+          mostFrequentExpressions.push(expression);
+        }
+      });
+  
+      setExpressionList(prev => [...prev, ...mostFrequentExpressions]);
+      console.log('Most Frequent Expressions:', expressionList);
     }
-  }, [expressions])
+  }, [expressions]);
 
   useEffect(() => {
     const sendPostRequest = async () => {
@@ -76,7 +95,7 @@ const VideoView = () => {
 
     // Cleanup interval on component unmount
     return () => clearInterval(interval)
-  }, [email])
+  }, [email, contentId, expressionList])
 
   return (
     <Box p={3} width="100vw" height="100vh" display="flex" flexDirection="column" alignItems="center">
