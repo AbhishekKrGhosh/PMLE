@@ -8,6 +8,7 @@ import Settings from "../Pages/Settings/Settings";
 import Courses from "../Pages/Courses/Courses";
 import IndividualCourses from "../Pages/Courses/IndividualCourses";
 import DetailedCourse from "../Pages/Courses/DetailedCourse";
+import VideoView from "../Pages/VideoView/VideoView";
 
 const MainRoutes ={
     path:"/",
@@ -44,6 +45,10 @@ const MainRoutes ={
         {
             path:'/detailedCourse',
             element:<DetailedCourse/>
+        },
+        {
+            path:'/videoView',
+            element:<VideoView/>
         }
 
     ]

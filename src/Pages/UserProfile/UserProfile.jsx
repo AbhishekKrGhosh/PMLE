@@ -15,14 +15,13 @@ function UserProfile(){
     console.log(userState.user)
 
     return (
-        <div className=" h-full overflow-y-visible ">
+        <div className=" h-full overflow-y-visible " style={{width: '100vw',
+        overflowY: 'scroll',
+        maxHeight: 'calc(100vh - 64px)'}}>
             <div className="w-[1477px] min-h-full px-3 py-8 flex-col overflow-y-visible ">
              <div className="flex  justify-evenly  ">
               <UserNamePlate></UserNamePlate>
                 <MyCalendar></MyCalendar>
-                </div>
-                 <div className="flex justify-center px-10 mt-3">
-                <UserActivityGraph></UserActivityGraph>
                 </div>
                 
 

@@ -56,14 +56,7 @@ function Header (){
         
               <div className="flex item-center gap-40  ">
 
-              <div>
-                <form className=" flex justify-end  items-center">
-                    <input value={search} onChange={(e)=>{setSearch(e.target.value)}} type="text" placeholder="Search for Videos"  className="px-1 py-2 w-[520px] rounded-md text-slate-700 shadow-sm shadow-slate-700"></input>
-                    <div className=" py-2 rounded-md px-1 ml-2 ">
-                    <SearchRoundedIcon onClick={handleClick} fontSize="medium" className="mx-2hover:cursor-pointer hover:scale-125 duration-75  "></SearchRoundedIcon>
-                    </div>
-                </form>
-              </div>
+              
              
 
 
