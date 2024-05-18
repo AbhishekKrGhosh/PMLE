@@ -30,7 +30,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           <App />
         </QueryClientProvider>
       </React.StrictMode>
-      ,
+      
     </Auth0Provider>
   </UserProvider>
 );
